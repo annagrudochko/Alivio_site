@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+:root {
+    --color_header: #01996D;
+    --color_footer: #245852;
+}
+
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+.conteiner {
+    max-width: 1370px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.top {
+}
+.top_flex {
+    display: flex;
+    justify-content: space-between;
+    color: #292929;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    font-size: 20px;
+}
+.top-img {
+}
+.top ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 72px;
+    padding-right: 113px;
+}
+.top_flex_right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 37px;
+}
+.top_right-a {
+    text-decoration: none;
+    color: #000;
+}
+.top_flex_right button {
+    width: 183px;
+    height: 51px;
+    border-radius: 4px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    background-color: var(--color_header);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.headline {
+    min-height: 895px;
+    background-image: url(../img/headline_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.headline h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 65px;
+    font-weight: bold;
+    color: var(--color_header);
+    max-width: 440px;
+    padding-top: 175px;
+    margin-bottom: 31px;
+}
+.headline p {
+    color: #484848;
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 420px;
+    height: 123px;
+    margin-bottom: 15px;
+    line-height: 28px;
+}
+.headline button {
+    width: 227px;
+    height: 65px;
+    border-radius: 4px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: var(--color_header);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+@media screen and (max-width: 1440px){
+    .conteiner {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .top ul {
+        padding-right: 0;
+    }
+}
+@media screen and (max-width: 1024px){
+    .top ul {
+        gap: 30px;
+    }
+}
+@media screen and (max-width: 850px){
+    .top_flex {
+        flex-wrap: wrap;
+        gap: 20px;
+        font-size: 18px;
+    }
+    .top_flex_right button {
+        font-size: 18px;
+    }
+    .headline h1 {
+        font-size: 55px;
+    }
+}
+@media screen and (max-width: 440px){
+    .top ul {
+        flex-wrap: wrap;
+    }
+}
